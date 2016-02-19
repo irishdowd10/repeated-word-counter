@@ -31,6 +31,6 @@ namespace RepeatCounter.Objects
 
       //Assert
       Assert.Equal(1, result);
-    }
+
   }
 }
