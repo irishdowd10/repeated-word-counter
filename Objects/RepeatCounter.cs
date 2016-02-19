@@ -15,34 +15,15 @@ namespace RepeatCounterNS.Objects
       _input2 = myInput2;
     }
 
-    public string GetInput1()
-    {
-      return _input1;
-    }
-
-    public string GetInput2()
-    {
-      return _input2;
-    }
-
     public int CountRepeats()
     {
       int repeatCount = 0;
       string[] phraseArray = _input1.Split(' ');
-      string input = _input2.ToLower();
       for (var i = 0; i < phraseArray.Length; i++)
       {
-        if(phraseArray[i].ToLower() == input)
+        if (phraseArray[i].ToLower().Contains(_input2.ToLower()))
         {
           repeatCount += 1;
-        }
-        else if (phraseArray[i].ToLower().Contains(input))
-        {
-          repeatCount += 1;
-        }
-        else
-        {
-          repeatCount += 0;
         }
       }
       return repeatCount;
