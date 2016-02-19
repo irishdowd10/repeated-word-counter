@@ -1,0 +1,14 @@
+1 It changes all input to lower case
+2 It splits input1 into multiple words
+3 It loops through the array to check and see if input1 is equal to input2
+4 It adds +1 to a word check counter if input1 is equal to input2
+5 It outputs word check counter
+
+  Input            || Output
+1 "Simon is named  || "simon is named simon"
+   Simon"          ||
+2 "Simon is named  || "simon" "is" "named" "simon"
+   Simon"          || 
+3  input1, input2  || loop through and check if item in input1 is equal to input2
+4  input1, input2  || if equal, +1 to counter variable
+5  input1, input2  || counter variable to be displayed to user
