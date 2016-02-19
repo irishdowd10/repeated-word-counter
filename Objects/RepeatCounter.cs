@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System;
 using System.Text.RegularExpressions;
 
-namespace RepeatCounter.Objects
+namespace RepeatCounterNS.Objects
 {
   public class RepeatCounter
   {
@@ -15,6 +15,15 @@ namespace RepeatCounter.Objects
       _input2 = myInput2;
     }
 
+    public string GetInput1()
+    {
+      return _input1;
+    }
+
+    public string GetInput2()
+    {
+      return _input2;
+    }
 
     public int CountRepeats()
     {
@@ -31,9 +40,12 @@ namespace RepeatCounter.Objects
         {
           repeatCount += 1;
         }
+        else
+        {
+          repeatCount += 0;
+        }
       }
       return repeatCount;
     }
-
   }
 }

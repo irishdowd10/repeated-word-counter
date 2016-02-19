@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using Xunit;
-namespace RepeatCounter.Objects
+namespace RepeatCounterNS.Objects
 {
-  public class FindAndReplaceTest
+  public class RepeatCounterTest
   {
     [Fact]
     public void Test1_IfInput1WillCountInput2LowerCase_ReturnCount()
