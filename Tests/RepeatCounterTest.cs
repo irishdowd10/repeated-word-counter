@@ -31,6 +31,20 @@ namespace RepeatCounter.Objects
 
       //Assert
       Assert.Equal(1, result);
+    }
+    [Fact]
+    public void Test3_IfInput1WillCountInput2AndAddMultipleCounts_ReturnCount()
+    {
+      //Arrange
+      string input1 = "Hello hello Hello hello";
+      string input2 = "hello";
+      RepeatCounter testWord = new RepeatCounter(input1, input2);
 
+      //Act
+      int result = testWord.CountRepeats();
+
+      //Assert
+      Assert.Equal(4, result);
+    }
   }
 }
