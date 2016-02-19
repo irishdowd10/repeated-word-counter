@@ -31,7 +31,6 @@ namespace RepeatCounter.Objects
         {
           repeatCount += 1;
         }
-
       }
       return repeatCount;
     }
