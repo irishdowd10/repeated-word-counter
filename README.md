@@ -1,4 +1,4 @@
-# _Repeat Counter
+# _Repeat Counter_
 #### _Will check for repeated word, 2/19_
 
 #### _**By Simon Temple**_
