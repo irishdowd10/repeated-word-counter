@@ -20,12 +20,18 @@ namespace RepeatCounter.Objects
     {
       int repeatCount = 0;
       string[] phraseArray = _input1.Split(' ');
+      string input = _input2.ToLower();
       for (var i = 0; i < phraseArray.Length; i++)
       {
-        if(phraseArray[i].ToLower() == _input2.ToLower())
+        if(phraseArray[i].ToLower() == input)
         {
           repeatCount += 1;
         }
+        else if (phraseArray[i].ToLower().Contains(input))
+        {
+          repeatCount += 1;
+        }
+
       }
       return repeatCount;
     }
