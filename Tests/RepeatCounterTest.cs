@@ -46,5 +46,19 @@ namespace RepeatCounter.Objects
       //Assert
       Assert.Equal(4, result);
     }
+    [Fact]
+    public void Test4_IfInput1WillCountInput2IfThereIsPunctuation_ReturnCount()
+    {
+      //Arrange
+      string input1 = "Hi my name is Simon. Simon is a name I like.";
+      string input2 = "simon";
+      RepeatCounter testWord = new RepeatCounter(input1, input2);
+
+      //Act
+      int result = testWord.CountRepeats();
+
+      //Assert
+      Assert.Equal(2, result);
+    }
   }
 }
